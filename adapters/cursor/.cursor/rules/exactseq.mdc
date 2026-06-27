@@ -1,12 +1,12 @@
 ---
-description: Generate browser-validated interactive HTML sequence diagrams with ExactSeq.
+description: Understand code execution flow with browser-validated ExactSeq HTML sequence diagrams.
 globs:
 alwaysApply: false
 ---
 
 # ExactSeq Cursor Rule
 
-Use this rule when the user asks for an interactive sequence diagram, architecture flow walkthrough, swimlane timeline, strict HTML diagram viewer, sticky participant rail, pixel-aligned lifelines, measured message endpoints, first-degree hover/click highlighting, or store/cache emphasis.
+Use this rule when the user asks to understand code flow, review AI-written code, inspect what calls what, visualize data movement, create an interactive sequence diagram, or generate a browser-readable HTML flow walkthrough.
 
 Follow the ExactSeq skill at `skill/exactseq/SKILL.md` when it is available in the current repository. Use `skill/exactseq/assets/strict-sequence-viewer-template.html` as the scaffold when starting from scratch.
 

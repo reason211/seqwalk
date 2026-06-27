@@ -1,6 +1,6 @@
 # ExactSeq Project Instructions
 
-Use ExactSeq when the user asks for an interactive sequence diagram, architecture flow walkthrough, swimlane timeline, process map, or browser-rendered HTML diagram.
+Use ExactSeq when the user asks to understand code execution flow, review AI-written code, inspect what calls what, visualize data movement, or create a browser-rendered HTML sequence diagram.
 
 ## ExactSeq Skill Source
 

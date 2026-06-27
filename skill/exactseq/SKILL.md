@@ -1,11 +1,11 @@
 ---
 name: exactseq
-description: Create or update self-contained interactive HTML sequence diagram viewers for architecture flows, swimlane timelines, process maps, and AI-agent-generated diagrams. Use when asked for sequence diagrams, interactive architecture walkthroughs, strict lifeline alignment, sticky participants, measured message endpoints, first-degree hover/click highlighting, store/cache emphasis, or browser-validated HTML diagram artifacts.
+description: Create or update self-contained interactive HTML sequence diagrams that help humans understand and review code execution flows, especially AI-written or AI-modified code. Use when asked to inspect code flow, explain what calls what, visualize data movement, review AI-generated code, create architecture walkthroughs, or generate browser-validated HTML sequence diagrams with sticky participants and aligned message lines.
 ---
 
 # ExactSeq
 
-ExactSeq creates strict, browser-validated interactive HTML sequence diagrams. The output should behave like a real sequence diagram: participants stay sticky, lifelines align to participant centers, message lines connect exact lifeline centers, and interaction highlights remain first-degree and understandable.
+ExactSeq creates browser-validated interactive HTML sequence diagrams that help humans understand code execution flow. The output should behave like a real sequence diagram: participants stay sticky, lifelines align to participant centers, message lines connect exact lifeline centers, and interaction highlights remain first-degree and understandable.
 
 Use the bundled scaffold at `assets/strict-sequence-viewer-template.html` when starting from scratch. For an existing artifact, update it in place while preserving its data model and visual system unless the user asks for a redesign.
 
