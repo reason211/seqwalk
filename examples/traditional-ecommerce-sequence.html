@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Traditional E-commerce Sequence Diagram</title>
+  <link rel="icon" href="data:," />
   <style>
     :root {
       --bg: #f7f8fb;
@@ -57,8 +58,8 @@
       padding: 7px 10px;
       border: 1px solid #d8dee8;
       border-radius: 999px;
-      color: #4b5565;
-      background: #fff;
+      color: #9a3412;
+      background: #fff7ed;
       font-size: 12px;
     }
 
@@ -108,12 +109,40 @@
 
     .label {
       fill: #39465c;
-      font-size: 12px;
+      font-size: 10px;
       paint-order: stroke;
       stroke: #fff;
-      stroke-width: 5px;
+      stroke-width: 4px;
       stroke-linejoin: round;
       text-anchor: middle;
+    }
+
+    .noise path {
+      fill: none;
+      stroke-width: 1.4;
+      stroke-dasharray: 3 4;
+      opacity: 0.48;
+      marker-end: url(#arrow);
+    }
+
+    .noise text {
+      fill: #667085;
+      font-size: 9px;
+      paint-order: stroke;
+      stroke: #fff;
+      stroke-width: 3px;
+      stroke-linejoin: round;
+      text-anchor: middle;
+    }
+
+    .dense-note {
+      fill: #b42318;
+      font-size: 11px;
+      font-weight: 700;
+      paint-order: stroke;
+      stroke: #fff;
+      stroke-width: 4px;
+      stroke-linejoin: round;
     }
 
     .phase {
@@ -134,9 +163,9 @@
     <header>
       <div>
         <h1>Traditional Sequence Diagram: E-commerce Order To Delivery</h1>
-        <p>A compact static diagram for the same flow. Useful, but hard to inspect when the process grows.</p>
+        <p>A dense static view of the same flow: callbacks, retries, audits, notifications, and BI events all appear at once.</p>
       </div>
-      <span class="badge">static reference</span>
+      <span class="badge">static, all signals visible</span>
     </header>
 
     <svg viewBox="0 0 1124 760" role="img" aria-label="Traditional e-commerce sequence diagram">
@@ -200,6 +229,51 @@
         <text class="actor-text" x="1062" y="48">Notify</text>
         <text class="actor-sub" x="1062" y="65">email / push</text>
         <line class="lifeline" x1="1062" y1="80" x2="1062" y2="710" />
+      </g>
+
+      <text class="dense-note" x="715" y="103">Every branch is visible at once; the critical path is hard to isolate.</text>
+
+      <g class="noise">
+        <path d="M78 132 C186 110 326 112 447 144" stroke="#8b5cf6" />
+        <text x="264" y="118">Address normalize</text>
+        <path d="M201 156 C340 120 508 120 693 156" stroke="#667085" />
+        <text x="447" y="128">Audit draft snapshot</text>
+        <path d="M324 170 C468 140 652 140 816 174" stroke="#d95f5f" />
+        <text x="570" y="148">Fraud queue preview</text>
+        <path d="M447 196 C620 164 848 164 1062 196" stroke="#16a4c4" />
+        <text x="755" y="170">Back-in-stock suppression</text>
+        <path d="M570 238 C456 214 312 216 201 242" stroke="#df8f32" />
+        <text x="386" y="220">Payment retry token</text>
+        <path d="M570 254 C700 226 910 228 1062 260" stroke="#16a4c4" />
+        <text x="820" y="232">Payment link fallback</text>
+        <path d="M324 288 C462 258 580 258 693 286" stroke="#16a36f" />
+        <text x="509" y="262">Tax invoice reserve</text>
+        <path d="M693 314 C585 292 442 292 324 316" stroke="#667085" />
+        <text x="509" y="296">Ledger consistency check</text>
+        <path d="M324 342 C510 318 842 318 1062 342" stroke="#16a4c4" />
+        <text x="693" y="322">Email, push, SMS fan-out</text>
+        <path d="M201 356 C330 392 665 392 816 356" stroke="#d95f5f" />
+        <text x="509" y="384">Warehouse capacity hint</text>
+        <path d="M816 416 C684 392 550 392 447 418" stroke="#16a36f" />
+        <text x="632" y="396">Reservation expiry reconcile</text>
+        <path d="M816 438 C682 462 466 462 324 438" stroke="#667085" />
+        <text x="570" y="466">Packing exception webhook</text>
+        <path d="M816 472 C880 440 1008 442 1062 476" stroke="#16a4c4" />
+        <text x="946" y="444">Picked notice</text>
+        <path d="M939 498 C820 528 558 528 324 500" stroke="#d95f5f" />
+        <text x="632" y="532">Waybill correction path</text>
+        <path d="M693 520 C780 548 910 548 1062 520" stroke="#8b5cf6" />
+        <text x="878" y="552">Shipment BI event</text>
+        <path d="M939 568 C790 542 510 542 201 568" stroke="#df8f32" />
+        <text x="570" y="546">Delivery slot edit</text>
+        <path d="M1062 594 C870 624 485 624 78 594" stroke="#16a4c4" />
+        <text x="570" y="626">Notification retry and open tracking</text>
+        <path d="M939 628 C1000 598 1060 602 1062 632" stroke="#16a4c4" />
+        <text x="1008" y="604">ETA push</text>
+        <path d="M324 660 C420 636 596 636 693 660" stroke="#16a36f" />
+        <text x="509" y="640">Proof hash write</text>
+        <path d="M324 690 C520 722 824 722 1062 690" stroke="#8b5cf6" />
+        <text x="693" y="725">Review coupon, invoice, after-sales links</text>
       </g>
 
       <path class="msg" d="M78 152 H201" stroke="var(--blue)" />

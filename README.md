@@ -8,17 +8,18 @@ SeqWalk works as an Agent Skill and template for Claude Code, OpenAI Codex, Curs
 
 ## Preview
 
-Example flow: an e-commerce order from checkout to stock reservation, payment, warehouse fulfillment, courier delivery, and signed receipt.
+Static sequence diagrams get noisy when callbacks, retries, audits, notifications, and BI events all appear at once. SeqWalk keeps the same e-commerce order flow readable by revealing it step by step as you scroll, while the sticky component rail highlights the services involved in the current step.
 
 - [Interactive HTML example](examples/ecommerce-order-flow.html)
 - [Traditional static sequence diagram](examples/traditional-ecommerce-sequence.html)
+- [Scroll highlight demo video](docs/assets/seqwalk-scroll-highlight.mp4)
 - [Gist source](https://gist.github.com/reason211/da91c6461eea41d0f72915bc8b260c2e)
-- [Gist HTML preview](https://gist.githack.com/reason211/da91c6461eea41d0f72915bc8b260c2e/raw/d431ee726b8ec0f95cc5f5631a583f53c8d40d51/seqwalk-ecommerce-order-flow.html)  
+- [Gist HTML preview](https://gist.githack.com/reason211/da91c6461eea41d0f72915bc8b260c2e/raw/seqwalk-ecommerce-order-flow.html)  
   First-time visitors may need to click **Open the page** on the preview safety notice.
 
-| Traditional Static Diagram | SeqWalk Interactive HTML |
+| Dense Static Diagram: Everything At Once | SeqWalk: Progressive Scroll Highlight |
 | --- | --- |
-| ![Traditional e-commerce sequence diagram](docs/assets/traditional-ecommerce-sequence.jpg) | ![SeqWalk interactive e-commerce sequence diagram](docs/assets/seqwalk-ecommerce-interactive.jpg) |
+| ![Dense traditional e-commerce sequence diagram](docs/assets/traditional-ecommerce-sequence.jpg) | ![SeqWalk scroll highlight demo](docs/assets/seqwalk-scroll-highlight.gif) |
 
 ## What It Does
 
