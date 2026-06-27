@@ -10,29 +10,7 @@ If SeqWalk saves you review time, please consider [buying me a coffee](SUPPORT.m
 
 ## Preview
 
-Static sequence diagrams get noisy when callbacks, retries, audits, notifications, and BI events all appear at once. SeqWalk keeps the same e-commerce order flow readable by revealing it step by step as you scroll, while the sticky component rail highlights the services involved in the current step.
-
-- [Interactive HTML example](examples/ecommerce-order-flow.html)
-- [Traditional static sequence diagram](examples/traditional-ecommerce-sequence.html)
-- [Scroll highlight demo video](docs/assets/seqwalk-scroll-highlight.mp4)
 - [Live HTML preview](https://raw.githack.com/reason211/seqwalk/main/examples/ecommerce-order-flow.html)
-
-First-time visitors may need to click **Open the page** on the preview safety notice.
-
-<table>
-  <tr>
-    <th width="50%">Dense Static Diagram: Everything At Once</th>
-    <th width="50%">SeqWalk: Progressive Scroll Highlight</th>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="docs/assets/traditional-ecommerce-sequence.jpg" alt="Dense traditional e-commerce sequence diagram" width="100%">
-    </td>
-    <td width="50%" valign="top">
-      <img src="docs/assets/seqwalk-scroll-highlight.gif" alt="SeqWalk scroll highlight demo" width="100%">
-    </td>
-  </tr>
-</table>
 
 ## What It Does
 
