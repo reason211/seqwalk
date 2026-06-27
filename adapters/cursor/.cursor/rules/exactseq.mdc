@@ -1,0 +1,27 @@
+---
+description: Generate browser-validated interactive HTML sequence diagrams with ExactSeq.
+globs:
+alwaysApply: false
+---
+
+# ExactSeq Cursor Rule
+
+Use this rule when the user asks for an interactive sequence diagram, architecture flow walkthrough, swimlane timeline, strict HTML diagram viewer, sticky participant rail, pixel-aligned lifelines, measured message endpoints, first-degree hover/click highlighting, or store/cache emphasis.
+
+Follow the ExactSeq skill at `skill/exactseq/SKILL.md` when it is available in the current repository. Use `skill/exactseq/assets/strict-sequence-viewer-template.html` as the scaffold when starting from scratch.
+
+If the skill file is not in the current repository, ask for the local ExactSeq path or use the nearest installed copy.
+
+Core requirements:
+
+- Output one self-contained HTML file unless the user requests otherwise.
+- Define ordered actors with stable ids, labels, subtitles, kinds, and colors.
+- Render sticky participants and lifelines from the same actor list.
+- Position message lines from measured DOM lifeline centers, not guessed grid spans.
+- Mark every flow with `data-from` and `data-to`.
+- Mark every event card with stable `data-card-id` and explicit `data-actors`.
+- Keep hover, focus, and click highlights first-degree only.
+- Preserve colored related flow styling for clicked locks.
+- Add semantic store/cache highlighting when persistence layers appear.
+- Validate in a browser at `1440x900` and `1280x800` when possible.
+- Report maximum actor-to-lifeline and message-endpoint deltas.

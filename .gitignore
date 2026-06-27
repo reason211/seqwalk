@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+dist/
+build/
+.env
+.env.*
+*.log
+*.tmp
+*.zip
+exactseq-smoke.html
+playwright-report/
+test-results/

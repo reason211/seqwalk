@@ -1,0 +1,7 @@
+interface:
+  display_name: "ExactSeq"
+  short_description: "Pixel-aligned interactive sequence diagrams"
+  default_prompt: "Use $exactseq to create a browser-validated interactive HTML sequence diagram."
+
+policy:
+  allow_implicit_invocation: true
