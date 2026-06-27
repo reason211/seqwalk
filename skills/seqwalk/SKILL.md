@@ -1,6 +1,11 @@
 ---
 name: seqwalk
 description: Create or update self-contained interactive HTML sequence diagrams that help humans understand and review code execution flows, especially AI-written or AI-modified code. Use when asked to inspect code flow, explain what calls what, visualize data movement, review AI-generated code, create architecture walkthroughs, or generate browser-validated HTML sequence diagrams with sticky participants and aligned message lines.
+license: MIT
+metadata:
+  category: development
+  author: reason211
+  version: 0.1.2
 ---
 
 # SeqWalk

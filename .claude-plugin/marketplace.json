@@ -13,7 +13,7 @@
         "repo": "reason211/seqwalk"
       },
       "description": "Walk through AI-written code with interactive HTML sequence diagrams.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "category": "development",
       "homepage": "https://github.com/reason211/seqwalk",
       "author": {
