@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a problem with ExactSeq instructions, adapters, or template behavior
+about: Report a problem with CodeFlowLens instructions, adapters, or template behavior
 title: "[Bug]: "
 labels: bug
 assignees: ""

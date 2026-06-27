@@ -1,16 +1,16 @@
 ---
-description: Understand code execution flow with browser-validated ExactSeq HTML sequence diagrams.
+description: Understand code execution flow with browser-validated CodeFlowLens HTML sequence diagrams.
 globs:
 alwaysApply: false
 ---
 
-# ExactSeq Cursor Rule
+# CodeFlowLens Cursor Rule
 
 Use this rule when the user asks to understand code flow, review AI-written code, inspect what calls what, visualize data movement, create an interactive sequence diagram, or generate a browser-readable HTML flow walkthrough.
 
-Follow the ExactSeq skill at `skill/exactseq/SKILL.md` when it is available in the current repository. Use `skill/exactseq/assets/strict-sequence-viewer-template.html` as the scaffold when starting from scratch.
+Follow the CodeFlowLens skill at `skill/codeflowlens/SKILL.md` when it is available in the current repository. Use `skill/codeflowlens/assets/strict-sequence-viewer-template.html` as the scaffold when starting from scratch.
 
-If the skill file is not in the current repository, ask for the local ExactSeq path or use the nearest installed copy.
+If the skill file is not in the current repository, ask for the local CodeFlowLens path or use the nearest installed copy.
 
 Core requirements:
 

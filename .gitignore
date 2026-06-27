@@ -7,6 +7,6 @@ build/
 *.log
 *.tmp
 *.zip
-exactseq-smoke.html
+codeflowlens-smoke.html
 playwright-report/
 test-results/

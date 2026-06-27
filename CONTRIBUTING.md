@@ -1,6 +1,6 @@
 # Contributing
 
-ExactSeq values changes that make generated sequence diagrams more exact, readable, portable, and easier for agents to validate.
+CodeFlowLens values changes that make generated sequence diagrams more readable, portable, and easier for agents to validate.
 
 Good contributions include:
 
@@ -14,7 +14,7 @@ Good contributions include:
 Before opening a pull request:
 
 ```bash
-python3 scripts/validate_skill.py skill/exactseq
+python3 scripts/validate_skill.py skill/codeflowlens
 ```
 
 For template changes, render an example diagram and check:
@@ -26,4 +26,4 @@ For template changes, render an example diagram and check:
 - first-degree hover and click highlighting;
 - store/cache highlight mode when stores exist.
 
-Keep persistent docs current-state oriented. Describe how ExactSeq works now, not how a change evolved.
+Keep persistent docs current-state oriented. Describe how CodeFlowLens works now, not how a change evolved.

@@ -1,19 +1,19 @@
-# ExactSeq Gemini CLI Instructions
+# CodeFlowLens Gemini CLI Instructions
 
-Use ExactSeq when the user asks to understand code execution flow, review AI-written code, inspect what calls what, visualize data movement, or create a browser-rendered HTML sequence diagram.
+Use CodeFlowLens when the user asks to understand code execution flow, review AI-written code, inspect what calls what, visualize data movement, or create a browser-rendered HTML sequence diagram.
 
 ## Skill Source
 
-Keep a local copy of the ExactSeq repository and reference:
+Keep a local copy of the CodeFlowLens repository and reference:
 
 ```text
-/path/to/exactseq/skill/exactseq/SKILL.md
+/path/to/codeflowlens/skill/codeflowlens/SKILL.md
 ```
 
 Use this scaffold for new diagrams:
 
 ```text
-/path/to/exactseq/skill/exactseq/assets/strict-sequence-viewer-template.html
+/path/to/codeflowlens/skill/codeflowlens/assets/strict-sequence-viewer-template.html
 ```
 
 ## Output Rules

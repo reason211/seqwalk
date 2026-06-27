@@ -3,7 +3,7 @@
 ## Architecture Flow
 
 ```text
-Use ExactSeq to create a self-contained interactive HTML sequence diagram.
+Use CodeFlowLens to create a self-contained interactive HTML sequence diagram.
 
 System:
 - Browser
@@ -34,7 +34,7 @@ Requirements:
 ## Existing Diagram Update
 
 ```text
-Use ExactSeq to update ./docs/payment-flow.html.
+Use CodeFlowLens to update ./docs/payment-flow.html.
 
 Read the existing actor list and steps first.
 Add the refund path from API to Payment Processor to Ledger.

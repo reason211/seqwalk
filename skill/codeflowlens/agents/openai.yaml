@@ -1,7 +1,7 @@
 interface:
-  display_name: "ExactSeq"
+  display_name: "CodeFlowLens"
   short_description: "Understand code flow with HTML sequence diagrams"
-  default_prompt: "Use $exactseq to diagram this code execution flow for review."
+  default_prompt: "Use $codeflowlens to diagram this code execution flow for review."
 
 policy:
   allow_implicit_invocation: true
