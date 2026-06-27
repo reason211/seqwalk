@@ -15,9 +15,9 @@ Static sequence diagrams get noisy when callbacks, retries, audits, notification
 - [Interactive HTML example](examples/ecommerce-order-flow.html)
 - [Traditional static sequence diagram](examples/traditional-ecommerce-sequence.html)
 - [Scroll highlight demo video](docs/assets/seqwalk-scroll-highlight.mp4)
-- [Gist source](https://gist.github.com/reason211/da91c6461eea41d0f72915bc8b260c2e)
-- [Gist HTML preview](https://gist.githack.com/reason211/da91c6461eea41d0f72915bc8b260c2e/raw/seqwalk-ecommerce-order-flow.html)  
-  First-time visitors may need to click **Open the page** on the preview safety notice.
+- [Live HTML preview](https://raw.githack.com/reason211/seqwalk/main/examples/ecommerce-order-flow.html)
+
+First-time visitors may need to click **Open the page** on the preview safety notice.
 
 <table>
   <tr>
