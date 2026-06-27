@@ -35,7 +35,7 @@ def parse_frontmatter(text: str) -> dict[str, str]:
 
 
 def main() -> int:
-    skill_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("skill/seqwalk")
+    skill_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("skills/seqwalk")
     if not skill_dir.exists():
         fail(f"Skill directory not found: {skill_dir}")
     skill_md = skill_dir / "SKILL.md"

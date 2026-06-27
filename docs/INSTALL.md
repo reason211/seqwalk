@@ -2,6 +2,29 @@
 
 SeqWalk can be installed as a native skill where the tool supports skills, or as project instructions where the tool supports rule files.
 
+## Plugin Source URL
+
+Use this repository URL when a marketplace, IDE, or plugin manager asks for a plugin source:
+
+```text
+https://github.com/reason211/seqwalk
+```
+
+SeqWalk includes plugin metadata for Claude Code, Cursor, Codex, and Open Plugins-compatible directories:
+
+- `.claude-plugin/plugin.json`
+- `.claude-plugin/marketplace.json`
+- `.cursor-plugin/plugin.json`
+- `.codex-plugin/plugin.json`
+- `.plugin/plugin.json`
+- `.plugin/marketplace.json`
+
+The repository also exposes standard discovery paths:
+
+- `skills/seqwalk/SKILL.md`
+- `rules/seqwalk.mdc`
+- `agents/seqwalk.md`
+
 ## OpenAI Codex
 
 Codex discovers user skills from `~/.agents/skills`.
@@ -9,7 +32,7 @@ Codex discovers user skills from `~/.agents/skills`.
 ```bash
 cd seqwalk
 mkdir -p ~/.agents/skills
-cp -R skill/seqwalk ~/.agents/skills/seqwalk
+cp -R skills/seqwalk ~/.agents/skills/seqwalk
 ```
 
 Restart Codex if `$seqwalk` does not appear after copying.
@@ -19,7 +42,7 @@ For a repository-scoped install:
 ```bash
 cd /path/to/your/project
 mkdir -p .agents/skills
-cp -R /path/to/seqwalk/skill/seqwalk .agents/skills/seqwalk
+cp -R /path/to/seqwalk/skills/seqwalk .agents/skills/seqwalk
 ```
 
 Use it:
@@ -30,12 +53,14 @@ Use $seqwalk to create an interactive sequence diagram for this flow.
 
 ## Claude Code And Claude Custom Skills
 
+Claude Code plugin-aware installs can use the repository URL above as the plugin marketplace source. The repository also supports manual skill installation.
+
 For Claude environments that support local custom skills, copy the skill folder into the local skills directory:
 
 ```bash
 cd seqwalk
 mkdir -p ~/.claude/skills
-cp -R skill/seqwalk ~/.claude/skills/seqwalk
+cp -R skills/seqwalk ~/.claude/skills/seqwalk
 ```
 
 For a repository-scoped install:
@@ -43,26 +68,28 @@ For a repository-scoped install:
 ```bash
 cd /path/to/your/project
 mkdir -p .claude/skills
-cp -R /path/to/seqwalk/skill/seqwalk .claude/skills/seqwalk
+cp -R /path/to/seqwalk/skills/seqwalk .claude/skills/seqwalk
 ```
 
-If your Claude environment uses uploaded custom skills, zip the contents of `skill/seqwalk` so the archive contains `SKILL.md` at the skill root:
+If your Claude environment uses uploaded custom skills, zip the contents of `skills/seqwalk` so the archive contains `SKILL.md` at the skill root:
 
 ```bash
-cd skill/seqwalk
+cd skills/seqwalk
 zip -r ../../seqwalk-skill.zip .
 ```
 
 If your Claude Code setup does not auto-discover local skills, reference the skill directly in the prompt:
 
 ```text
-Use the SeqWalk skill at /path/to/seqwalk/skill/seqwalk/SKILL.md.
+Use the SeqWalk skill at /path/to/seqwalk/skills/seqwalk/SKILL.md.
 Create a self-contained interactive HTML sequence diagram and use the bundled template asset.
 ```
 
 ## Cursor
 
-Cursor uses project rules and `AGENTS.md` instructions. SeqWalk ships both adapters.
+Cursor plugin-aware installs and Cursor Directory can use the repository URL above. SeqWalk also ships a root rule at `rules/seqwalk.mdc` and an adapter copy under `adapters/cursor/.cursor/rules/seqwalk.mdc`.
+
+Manual project rule install:
 
 ```bash
 cd /path/to/your/project
@@ -84,7 +111,7 @@ Keep the SeqWalk repository available on disk, then ask Cursor:
 
 ```text
 Use the SeqWalk rule to create an interactive HTML sequence diagram.
-Use /path/to/seqwalk/skill/seqwalk/assets/strict-sequence-viewer-template.html as the scaffold.
+Use /path/to/seqwalk/skills/seqwalk/assets/strict-sequence-viewer-template.html as the scaffold.
 ```
 
 ## Gemini CLI
@@ -104,7 +131,7 @@ Then ask Gemini CLI:
 
 ```text
 Use SeqWalk to create an interactive HTML sequence diagram.
-Use /path/to/seqwalk/skill/seqwalk/assets/strict-sequence-viewer-template.html as the scaffold.
+Use /path/to/seqwalk/skills/seqwalk/assets/strict-sequence-viewer-template.html as the scaffold.
 Validate it in a browser and report alignment deltas.
 ```
 
@@ -122,7 +149,7 @@ test -f AGENTS.md \
 Then include the skill path in the prompt:
 
 ```text
-Use SeqWalk from /path/to/seqwalk/skill/seqwalk/SKILL.md.
+Use SeqWalk from /path/to/seqwalk/skills/seqwalk/SKILL.md.
 Build a self-contained interactive HTML sequence diagram.
 Validate it in a browser and report alignment deltas.
 ```

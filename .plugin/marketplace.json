@@ -1,0 +1,21 @@
+{
+  "name": "seqwalk-marketplace",
+  "description": "SeqWalk plugin marketplace for AI coding tools.",
+  "owner": {
+    "name": "reason211",
+    "url": "https://github.com/reason211"
+  },
+  "plugins": [
+    {
+      "name": "seqwalk",
+      "source": {
+        "source": "github",
+        "repo": "reason211/seqwalk"
+      },
+      "description": "Walk through AI-written code with interactive HTML sequence diagrams.",
+      "version": "0.1.1",
+      "category": "development",
+      "homepage": "https://github.com/reason211/seqwalk"
+    }
+  ]
+}

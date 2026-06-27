@@ -1,6 +1,6 @@
 ---
 description: Understand code execution flow with browser-validated SeqWalk HTML sequence diagrams.
-globs:
+globs: "**/*"
 alwaysApply: false
 ---
 

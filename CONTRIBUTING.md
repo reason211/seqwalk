@@ -14,7 +14,7 @@ Good contributions include:
 Before opening a pull request:
 
 ```bash
-python3 scripts/validate_skill.py skill/seqwalk
+python3 scripts/validate_skill.py skills/seqwalk
 ```
 
 For template changes, render an example diagram and check:

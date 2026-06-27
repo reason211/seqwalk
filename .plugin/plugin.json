@@ -1,0 +1,43 @@
+{
+  "name": "seqwalk",
+  "version": "0.1.1",
+  "description": "Walk through AI-written code with interactive HTML sequence diagrams.",
+  "author": {
+    "name": "reason211",
+    "url": "https://github.com/reason211"
+  },
+  "homepage": "https://github.com/reason211/seqwalk#readme",
+  "repository": "https://github.com/reason211/seqwalk",
+  "license": "MIT",
+  "keywords": [
+    "sequence-diagram",
+    "code-review",
+    "ai-coding-agents",
+    "agent-skills",
+    "claude-code",
+    "openai-codex",
+    "cursor",
+    "gemini-cli",
+    "developer-tools"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SeqWalk",
+    "shortDescription": "Understand AI-written code flow with interactive HTML sequence diagrams.",
+    "longDescription": "SeqWalk helps humans review AI-written code by turning execution paths into browser-validated HTML sequence diagrams with sticky participants, scroll-aware highlights, and aligned message lines. It is MIT-licensed; if it saves you review time, please buy the maintainer a coffee via the support links and wallet QR codes in the repository.",
+    "developerName": "reason211",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Skill",
+      "Code Review",
+      "Visualization"
+    ],
+    "websiteURL": "https://github.com/reason211/seqwalk",
+    "defaultPrompt": [
+      "Use SeqWalk to diagram this code flow.",
+      "Create an interactive HTML sequence diagram.",
+      "Review this AI-written flow with SeqWalk."
+    ],
+    "brandColor": "#2F7DF6"
+  }
+}

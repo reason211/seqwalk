@@ -6,6 +6,8 @@ AI agents can write code fast, but the execution flow is often slow for humans t
 
 SeqWalk works as an Agent Skill and template for Claude Code, OpenAI Codex, Cursor, Gemini CLI, and similar tools.
 
+If SeqWalk saves you review time, please consider [buying me a coffee](SUPPORT.md). Tips keep the skill maintained, tested, and published across agent marketplaces.
+
 ## Preview
 
 Static sequence diagrams get noisy when callbacks, retries, audits, notifications, and BI events all appear at once. SeqWalk keeps the same e-commerce order flow readable by revealing it step by step as you scroll, while the sticky component rail highlights the services involved in the current step.
@@ -29,7 +31,22 @@ Static sequence diagrams get noisy when callbacks, retries, audits, notification
 - Keeps message lines aligned and validates the result in a browser.
 - Helps humans review, debug, and explain AI-generated code.
 
-## Install
+## Marketplace And One-Click Install
+
+SeqWalk is packaged for plugin-aware AI coding tools:
+
+- Claude Code: `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`
+- Cursor and Cursor Directory: `.cursor-plugin/plugin.json`, `rules/seqwalk.mdc`, `agents/seqwalk.md`, and `skills/seqwalk/SKILL.md`
+- OpenAI Codex: `.codex-plugin/plugin.json` and `skills/seqwalk/SKILL.md`
+- Open Plugins-compatible directories: `.plugin/plugin.json` and `.plugin/marketplace.json`
+
+Use this GitHub repository URL when a marketplace or IDE asks for a plugin source:
+
+```text
+https://github.com/reason211/seqwalk
+```
+
+## Manual Install
 
 From a local clone or downloaded copy:
 
@@ -41,28 +58,28 @@ Codex user install:
 
 ```bash
 mkdir -p ~/.agents/skills
-cp -R skill/seqwalk ~/.agents/skills/seqwalk
+cp -R skills/seqwalk ~/.agents/skills/seqwalk
 ```
 
 Codex project install:
 
 ```bash
 mkdir -p /path/to/project/.agents/skills
-cp -R skill/seqwalk /path/to/project/.agents/skills/seqwalk
+cp -R skills/seqwalk /path/to/project/.agents/skills/seqwalk
 ```
 
 Claude local skill install:
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -R skill/seqwalk ~/.claude/skills/seqwalk
+cp -R skills/seqwalk ~/.claude/skills/seqwalk
 ```
 
 Claude project skill install:
 
 ```bash
 mkdir -p /path/to/project/.claude/skills
-cp -R skill/seqwalk /path/to/project/.claude/skills/seqwalk
+cp -R skills/seqwalk /path/to/project/.claude/skills/seqwalk
 ```
 
 Cursor rule install:
@@ -101,22 +118,28 @@ Use $seqwalk to diagram this execution flow.
 ## Repository Layout
 
 ```text
-skill/seqwalk/                            # Native skill bundle
-adapters/cursor/.cursor/rules/        # Cursor rule
-adapters/gemini/GEMINI.md             # Gemini CLI context
-adapters/agents/AGENTS.md             # Generic agent instructions
-docs/INSTALL.md                       # Manual install guide
-docs/PROMOTION.md                     # Short launch and sharing copy
-docs/assets/                          # Screenshots and wallet QR codes
-examples/prompt.md                    # Example prompts
-examples/ecommerce-order-flow.html    # Interactive HTML demo
+skills/seqwalk/                            # Native skill bundle
+rules/seqwalk.mdc                         # Cursor rule
+agents/seqwalk.md                         # Agent definition
+.plugin/                                  # Open Plugins-compatible metadata
+.claude-plugin/                           # Claude Code plugin and marketplace metadata
+.codex-plugin/                            # Codex plugin metadata
+.cursor-plugin/                           # Cursor plugin metadata
+adapters/                                 # Gemini, Cursor, and generic adapter copies
+docs/INSTALL.md                           # Manual install guide
+docs/PROMOTION.md                         # Short launch and sharing copy
+docs/assets/                              # Screenshots and wallet QR codes
+examples/prompt.md                        # Example prompts
+examples/ecommerce-order-flow.html        # Interactive HTML demo
 examples/traditional-ecommerce-sequence.html
-scripts/validate_skill.py             # Validation helper
+scripts/validate_skill.py                 # Validation helper
 ```
 
 ## Support
 
 SeqWalk is free MIT-licensed software. If it saves you time reviewing AI-written code or helps you understand a messy execution path faster, please consider buying me a coffee. Tips help fund maintenance, browser testing, and new templates.
+
+Full support page: [SUPPORT.md](SUPPORT.md).
 
 | Network | Address | QR |
 | --- | --- | --- |

@@ -1,16 +1,28 @@
-# SeqWalk Gemini CLI Instructions
+---
+name: seqwalk-flow-reviewer
+description: Use SeqWalk to understand code execution flow, review AI-written code, and generate browser-validated HTML sequence diagrams.
+tools: Read, Grep, Glob, Bash, Write
+---
+
+# SeqWalk Flow Reviewer
 
 Use SeqWalk when the user asks to understand code execution flow, review AI-written code, inspect what calls what, visualize data movement, or create a browser-rendered HTML sequence diagram.
 
-## Skill Source
+## SeqWalk Skill Source
 
-Keep a local copy of the SeqWalk repository and reference:
+Primary skill folder:
+
+```text
+skills/seqwalk/
+```
+
+If this adapter is copied into another project, keep a local copy of the SeqWalk repository and reference:
 
 ```text
 /path/to/seqwalk/skills/seqwalk/SKILL.md
 ```
 
-Use this scaffold for new diagrams:
+Use the bundled scaffold for new diagrams:
 
 ```text
 /path/to/seqwalk/skills/seqwalk/assets/strict-sequence-viewer-template.html

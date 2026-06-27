@@ -15,4 +15,12 @@ jobs:
         with:
           python-version: "3.12"
       - name: Validate SeqWalk skill
-        run: python3 scripts/validate_skill.py skill/seqwalk
+        run: python3 scripts/validate_skill.py skills/seqwalk
+      - name: Validate plugin metadata
+        run: |
+          python3 -m json.tool .plugin/plugin.json >/dev/null
+          python3 -m json.tool .plugin/marketplace.json >/dev/null
+          python3 -m json.tool .claude-plugin/plugin.json >/dev/null
+          python3 -m json.tool .claude-plugin/marketplace.json >/dev/null
+          python3 -m json.tool .codex-plugin/plugin.json >/dev/null
+          python3 -m json.tool .cursor-plugin/plugin.json >/dev/null

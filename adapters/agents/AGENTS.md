@@ -7,19 +7,19 @@ Use SeqWalk when the user asks to understand code execution flow, review AI-writ
 Primary skill folder:
 
 ```text
-skill/seqwalk/
+skills/seqwalk/
 ```
 
 If this adapter is copied into another project, keep a local copy of the SeqWalk repository and reference:
 
 ```text
-/path/to/seqwalk/skill/seqwalk/SKILL.md
+/path/to/seqwalk/skills/seqwalk/SKILL.md
 ```
 
 Use the bundled scaffold for new diagrams:
 
 ```text
-/path/to/seqwalk/skill/seqwalk/assets/strict-sequence-viewer-template.html
+/path/to/seqwalk/skills/seqwalk/assets/strict-sequence-viewer-template.html
 ```
 
 ## Output Rules
