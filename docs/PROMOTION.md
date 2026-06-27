@@ -28,7 +28,7 @@ html-template
 Title:
 
 ```text
-SeqWalk v0.1.2
+SeqWalk v0.1.3
 ```
 
 Body:
@@ -36,7 +36,7 @@ Body:
 ```text
 SeqWalk helps humans review AI-written code by turning execution paths into easy-to-read interactive HTML sequence diagrams.
 
-This release includes a native skill bundle, a strict HTML sequence viewer template, plugin metadata for Claude Code, Cursor, Codex, and Open Plugins-compatible directories, manual install guides, and adapters for Gemini CLI and other agent tools.
+This release includes a native skill bundle, a strict HTML sequence viewer template with fixed section navigation, store/cache highlighting, and clear-lock controls, plugin metadata for Claude Code, Cursor, Codex, and Open Plugins-compatible directories, manual install guides, and adapters for Gemini CLI and other agent tools.
 
 If SeqWalk saves you review time, please consider buying me a coffee through the support section. Tips help fund maintenance, browser testing, marketplace submissions, and new templates.
 ```
