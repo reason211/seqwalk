@@ -33,8 +33,17 @@ Use $seqwalk to create an interactive sequence diagram for this flow.
 For Claude environments that support local custom skills, copy the skill folder into the local skills directory:
 
 ```bash
+cd seqwalk
 mkdir -p ~/.claude/skills
 cp -R skill/seqwalk ~/.claude/skills/seqwalk
+```
+
+For a repository-scoped install:
+
+```bash
+cd /path/to/your/project
+mkdir -p .claude/skills
+cp -R /path/to/seqwalk/skill/seqwalk .claude/skills/seqwalk
 ```
 
 If your Claude environment uses uploaded custom skills, zip the contents of `skill/seqwalk` so the archive contains `SKILL.md` at the skill root:

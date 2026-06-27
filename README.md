@@ -43,6 +43,13 @@ mkdir -p ~/.claude/skills
 cp -R skill/seqwalk ~/.claude/skills/seqwalk
 ```
 
+Claude project skill install:
+
+```bash
+mkdir -p /path/to/project/.claude/skills
+cp -R skill/seqwalk /path/to/project/.claude/skills/seqwalk
+```
+
 Cursor rule install:
 
 ```bash
