@@ -6,6 +6,20 @@ AI agents can write code fast, but the execution flow is often slow for humans t
 
 SeqWalk works as an Agent Skill and template for Claude Code, OpenAI Codex, Cursor, Gemini CLI, and similar tools.
 
+## Preview
+
+Example flow: an e-commerce order from checkout to stock reservation, payment, warehouse fulfillment, courier delivery, and signed receipt.
+
+- [Interactive HTML example](examples/ecommerce-order-flow.html)
+- [Traditional static sequence diagram](examples/traditional-ecommerce-sequence.html)
+- [Gist source](https://gist.github.com/reason211/da91c6461eea41d0f72915bc8b260c2e)
+- [Gist HTML preview](https://gist.githack.com/reason211/da91c6461eea41d0f72915bc8b260c2e/raw/d431ee726b8ec0f95cc5f5631a583f53c8d40d51/seqwalk-ecommerce-order-flow.html)  
+  First-time visitors may need to click **Open the page** on the preview safety notice.
+
+| Traditional Static Diagram | SeqWalk Interactive HTML |
+| --- | --- |
+| ![Traditional e-commerce sequence diagram](docs/assets/traditional-ecommerce-sequence.jpg) | ![SeqWalk interactive e-commerce sequence diagram](docs/assets/seqwalk-ecommerce-interactive.jpg) |
+
 ## What It Does
 
 - Generates a self-contained HTML sequence diagram for a code flow.
@@ -92,27 +106,24 @@ adapters/gemini/GEMINI.md             # Gemini CLI context
 adapters/agents/AGENTS.md             # Generic agent instructions
 docs/INSTALL.md                       # Manual install guide
 docs/PROMOTION.md                     # Short launch and sharing copy
+docs/assets/                          # Screenshots and wallet QR codes
 examples/prompt.md                    # Example prompts
+examples/ecommerce-order-flow.html    # Interactive HTML demo
+examples/traditional-ecommerce-sequence.html
 scripts/validate_skill.py             # Validation helper
 ```
 
 ## Support
 
-SeqWalk is free MIT-licensed software. If it saves you time reviewing AI-written code or helps you understand a messy execution path faster, optional tips help fund maintenance, browser testing, and new templates.
+SeqWalk is free MIT-licensed software. If it saves you time reviewing AI-written code or helps you understand a messy execution path faster, please consider buying me a coffee. Tips help fund maintenance, browser testing, and new templates.
 
-<details>
-<summary>Wallet addresses</summary>
+| Network | Address | QR |
+| --- | --- | --- |
+| ETH / BNB Smart Chain (BSC) / Arbitrum One / Base / Optimism / Polygon and other EVM-compatible chains | `0xF459A9D96cAC23fABb3F44E1F4508da7fe24c2f7` | <img src="docs/assets/qr-evm.png" alt="EVM wallet QR code" width="150"> |
+| Solana | `8Q1dAVExNT62TcKowbrDL2DpnDyex77Xw1o9sJ9fAy6e` | <img src="docs/assets/qr-solana.png" alt="Solana wallet QR code" width="150"> |
+| Tron | `TMqU8d1vh7mqjGSPLVMi7MXrCmHX4s6Gj2` | <img src="docs/assets/qr-tron.png" alt="Tron wallet QR code" width="150"> |
 
-**ETH / BNB Smart Chain (BSC) / Arbitrum One / Base / Optimism / Polygon and other EVM-compatible chains**  
-`0xF459A9D96cAC23fABb3F44E1F4508da7fe24c2f7`
-
-**Solana**  
-`8Q1dAVExNT62TcKowbrDL2DpnDyex77Xw1o9sJ9fAy6e`
-
-**Tron**  
-`TMqU8d1vh7mqjGSPLVMi7MXrCmHX4s6Gj2`
-
-</details>
+Thank you for supporting open-source agent skills.
 
 ## Suggested Topics
 
