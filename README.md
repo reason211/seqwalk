@@ -19,9 +19,20 @@ Static sequence diagrams get noisy when callbacks, retries, audits, notification
 - [Gist HTML preview](https://gist.githack.com/reason211/da91c6461eea41d0f72915bc8b260c2e/raw/seqwalk-ecommerce-order-flow.html)  
   First-time visitors may need to click **Open the page** on the preview safety notice.
 
-| Dense Static Diagram: Everything At Once | SeqWalk: Progressive Scroll Highlight |
-| --- | --- |
-| ![Dense traditional e-commerce sequence diagram](docs/assets/traditional-ecommerce-sequence.jpg) | ![SeqWalk scroll highlight demo](docs/assets/seqwalk-scroll-highlight.gif) |
+<table>
+  <tr>
+    <th width="50%">Dense Static Diagram: Everything At Once</th>
+    <th width="50%">SeqWalk: Progressive Scroll Highlight</th>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/assets/traditional-ecommerce-sequence.jpg" alt="Dense traditional e-commerce sequence diagram" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/assets/seqwalk-scroll-highlight.gif" alt="SeqWalk scroll highlight demo" width="100%">
+    </td>
+  </tr>
+</table>
 
 ## What It Does
 
