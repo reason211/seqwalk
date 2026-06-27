@@ -3,7 +3,7 @@
 ## Architecture Flow
 
 ```text
-Use CodeFlowLens to create a self-contained interactive HTML sequence diagram.
+Use SeqWalk to create a self-contained interactive HTML sequence diagram.
 
 System:
 - Browser
@@ -34,7 +34,7 @@ Requirements:
 ## Existing Diagram Update
 
 ```text
-Use CodeFlowLens to update ./docs/payment-flow.html.
+Use SeqWalk to update ./docs/payment-flow.html.
 
 Read the existing actor list and steps first.
 Add the refund path from API to Payment Processor to Ledger.

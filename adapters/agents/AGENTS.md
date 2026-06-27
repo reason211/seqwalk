@@ -1,25 +1,25 @@
-# CodeFlowLens Project Instructions
+# SeqWalk Project Instructions
 
-Use CodeFlowLens when the user asks to understand code execution flow, review AI-written code, inspect what calls what, visualize data movement, or create a browser-rendered HTML sequence diagram.
+Use SeqWalk when the user asks to understand code execution flow, review AI-written code, inspect what calls what, visualize data movement, or create a browser-rendered HTML sequence diagram.
 
-## CodeFlowLens Skill Source
+## SeqWalk Skill Source
 
 Primary skill folder:
 
 ```text
-skill/codeflowlens/
+skill/seqwalk/
 ```
 
-If this adapter is copied into another project, keep a local copy of the CodeFlowLens repository and reference:
+If this adapter is copied into another project, keep a local copy of the SeqWalk repository and reference:
 
 ```text
-/path/to/codeflowlens/skill/codeflowlens/SKILL.md
+/path/to/seqwalk/skill/seqwalk/SKILL.md
 ```
 
 Use the bundled scaffold for new diagrams:
 
 ```text
-/path/to/codeflowlens/skill/codeflowlens/assets/strict-sequence-viewer-template.html
+/path/to/seqwalk/skill/seqwalk/assets/strict-sequence-viewer-template.html
 ```
 
 ## Output Rules

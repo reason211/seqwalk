@@ -1,10 +1,10 @@
-# CodeFlowLens
+# SeqWalk
 
-**Understand AI-written code faster with interactive HTML sequence diagrams.**
+**Walk through AI-written code with interactive HTML sequence diagrams.**
 
-Modern codebases are increasingly written or changed by AI agents. That makes code review harder: the code may work, but the execution flow is not always obvious. CodeFlowLens helps you ask an AI coding tool to turn code paths into an easy-to-read HTML sequence diagram, so you can quickly understand what runs, in what order, and where data moves.
+AI agents can write code fast, but the execution flow is often slow for humans to review. SeqWalk turns code paths into easy-to-read interactive HTML sequence diagrams, so you can quickly see what runs, in what order, and where data moves.
 
-CodeFlowLens works as an Agent Skill and template for Claude Code, OpenAI Codex, Cursor, Gemini CLI, and similar tools.
+SeqWalk works as an Agent Skill and template for Claude Code, OpenAI Codex, Cursor, Gemini CLI, and similar tools.
 
 ## What It Does
 
@@ -19,35 +19,35 @@ CodeFlowLens works as an Agent Skill and template for Claude Code, OpenAI Codex,
 From a local clone or downloaded copy:
 
 ```bash
-cd codeflowlens
+cd seqwalk
 ```
 
 Codex user install:
 
 ```bash
 mkdir -p ~/.agents/skills
-cp -R skill/codeflowlens ~/.agents/skills/codeflowlens
+cp -R skill/seqwalk ~/.agents/skills/seqwalk
 ```
 
 Codex project install:
 
 ```bash
 mkdir -p /path/to/project/.agents/skills
-cp -R skill/codeflowlens /path/to/project/.agents/skills/codeflowlens
+cp -R skill/seqwalk /path/to/project/.agents/skills/seqwalk
 ```
 
 Claude local skill install:
 
 ```bash
 mkdir -p ~/.claude/skills
-cp -R skill/codeflowlens ~/.claude/skills/codeflowlens
+cp -R skill/seqwalk ~/.claude/skills/seqwalk
 ```
 
 Cursor rule install:
 
 ```bash
 mkdir -p /path/to/project/.cursor/rules
-cp adapters/cursor/.cursor/rules/codeflowlens.mdc /path/to/project/.cursor/rules/codeflowlens.mdc
+cp adapters/cursor/.cursor/rules/seqwalk.mdc /path/to/project/.cursor/rules/seqwalk.mdc
 ```
 
 Gemini CLI adapter:
@@ -56,7 +56,7 @@ Gemini CLI adapter:
 cp adapters/gemini/GEMINI.md /path/to/project/GEMINI.md
 ```
 
-If the target project already has `AGENTS.md` or `GEMINI.md`, merge the CodeFlowLens instructions instead of replacing the file.
+If the target project already has `AGENTS.md` or `GEMINI.md`, merge the SeqWalk instructions instead of replacing the file.
 
 Detailed install notes: [docs/INSTALL.md](docs/INSTALL.md).
 
@@ -65,7 +65,7 @@ Detailed install notes: [docs/INSTALL.md](docs/INSTALL.md).
 Ask your agent:
 
 ```text
-Use CodeFlowLens to inspect this code path and create an interactive HTML sequence diagram.
+Use SeqWalk to inspect this code path and create an interactive HTML sequence diagram.
 Focus on what calls what, where data is read or written, and what a reviewer should verify.
 Validate the generated HTML in a browser and report alignment deltas.
 ```
@@ -73,29 +73,30 @@ Validate the generated HTML in a browser and report alignment deltas.
 For native skill tools:
 
 ```text
-Use $codeflowlens to diagram this execution flow.
+Use $seqwalk to diagram this execution flow.
 ```
 
 ## Repository Layout
 
 ```text
-skill/codeflowlens/                       # Native skill bundle
+skill/seqwalk/                            # Native skill bundle
 adapters/cursor/.cursor/rules/        # Cursor rule
 adapters/gemini/GEMINI.md             # Gemini CLI context
 adapters/agents/AGENTS.md             # Generic agent instructions
 docs/INSTALL.md                       # Manual install guide
+docs/PROMOTION.md                     # Short launch and sharing copy
 examples/prompt.md                    # Example prompts
 scripts/validate_skill.py             # Validation helper
 ```
 
 ## Support
 
-CodeFlowLens is free MIT-licensed software. If it saves you time reviewing AI-written code or helps you understand a messy execution path faster, optional tips help fund maintenance, browser testing, and new templates.
+SeqWalk is free MIT-licensed software. If it saves you time reviewing AI-written code or helps you understand a messy execution path faster, optional tips help fund maintenance, browser testing, and new templates.
 
 <details>
 <summary>Wallet addresses</summary>
 
-**ETH/BSC/Arbitrum One and other EVM-compatible chains**  
+**ETH / BNB Smart Chain (BSC) / Arbitrum One / Base / Optimism / Polygon and other EVM-compatible chains**  
 `0xF459A9D96cAC23fABb3F44E1F4508da7fe24c2f7`
 
 **Solana**  
@@ -110,7 +111,6 @@ CodeFlowLens is free MIT-licensed software. If it saves you time reviewing AI-wr
 
 ```text
 sequence-diagram
-html-template
 code-review
 ai-coding-agents
 agent-skills
@@ -119,6 +119,7 @@ openai-codex
 cursor
 gemini-cli
 developer-tools
+html-template
 ```
 
 ## License

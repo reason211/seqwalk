@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the CodeFlowLens skill bundle without third-party dependencies."""
+"""Validate the SeqWalk skill bundle without third-party dependencies."""
 
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ def parse_frontmatter(text: str) -> dict[str, str]:
 
 
 def main() -> int:
-    skill_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("skill/codeflowlens")
+    skill_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("skill/seqwalk")
     if not skill_dir.exists():
         fail(f"Skill directory not found: {skill_dir}")
     skill_md = skill_dir / "SKILL.md"
@@ -74,7 +74,7 @@ def main() -> int:
         if token not in yaml_text:
             fail(f"openai.yaml missing {token}")
 
-    print("[OK] CodeFlowLens skill bundle is valid")
+    print("[OK] SeqWalk skill bundle is valid")
     return 0
 
 
