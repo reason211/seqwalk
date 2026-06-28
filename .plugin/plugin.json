@@ -1,6 +1,6 @@
 {
   "name": "seqwalk",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Walk through AI-written code with interactive HTML sequence diagrams.",
   "author": {
     "name": "reason211",
