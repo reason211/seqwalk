@@ -5,7 +5,7 @@ license: MIT
 metadata:
   category: development
   author: reason211
-  version: 0.1.4
+  version: 0.1.5
 ---
 
 # SeqWalk
