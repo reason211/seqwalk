@@ -10,24 +10,23 @@ If SeqWalk saves you review time, please consider [buying me a coffee](SUPPORT.m
 
 ## Preview
 
-Static sequence diagrams get noisy when callbacks, retries, audits, notifications, and BI events all appear at once. SeqWalk keeps the same e-commerce order flow readable by revealing it step by step as you scroll, while the sticky component rail highlights the services involved in the current step.
+Static sequence diagrams get noisy when callbacks, retries, audits, notifications, and BI events all appear at once. SeqWalk keeps the same e-commerce order flow readable by revealing it step by step as you scroll, with card locks and component locks for focused review.
 
-- [Live HTML preview](https://raw.githack.com/reason211/seqwalk/main/examples/ecommerce-order-flow.html)
-- [Traditional static sequence diagram](examples/traditional-ecommerce-sequence.html)
+- [Interactive HTML demo](https://raw.githack.com/reason211/seqwalk/main/examples/ecommerce-order-flow.html)
 
 Both previews use the same `1440x900` frame.
 
 <table>
   <tr>
     <th width="50%">Dense Static Diagram: Everything At Once</th>
-    <th width="50%">SeqWalk: Progressive Scroll Highlight</th>
+    <th width="50%">SeqWalk: Scroll, Card, And Component Highlights</th>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <img src="docs/assets/traditional-ecommerce-sequence.jpg" alt="Dense traditional e-commerce sequence diagram" width="100%">
     </td>
     <td width="50%" valign="top">
-      <img src="docs/assets/seqwalk-scroll-highlight.gif" alt="SeqWalk scroll highlight demo" width="100%">
+      <img src="docs/assets/seqwalk-scroll-highlight.gif" alt="SeqWalk scroll, card, and component highlight demo" width="100%">
     </td>
   </tr>
 </table>
@@ -140,7 +139,6 @@ docs/PROMOTION.md                         # Short launch and sharing copy
 docs/assets/                              # Screenshots and wallet QR codes
 examples/prompt.md                        # Example prompts
 examples/ecommerce-order-flow.html        # Interactive HTML demo
-examples/traditional-ecommerce-sequence.html
 scripts/validate_skill.py                 # Validation helper
 ```
 
