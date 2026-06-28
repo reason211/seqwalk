@@ -28,7 +28,7 @@ html-template
 Title:
 
 ```text
-SeqWalk v0.1.4
+SeqWalk v0.1.5
 ```
 
 Body:
