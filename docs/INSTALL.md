@@ -25,6 +25,19 @@ The repository also exposes standard discovery paths:
 - `rules/seqwalk.mdc`
 - `agents/seqwalk.md`
 
+## Release ZIP
+
+The current release zip contains the native SeqWalk skill with `SKILL.md`, the strict HTML viewer template, and OpenAI agent metadata at the archive root.
+
+```bash
+curl -L -o seqwalk-skill-v0.1.5.zip \
+  https://github.com/reason211/seqwalk/releases/download/v0.1.5/seqwalk-skill-v0.1.5.zip
+mkdir -p ~/.agents/skills/seqwalk
+unzip -o seqwalk-skill-v0.1.5.zip -d ~/.agents/skills/seqwalk
+```
+
+For Claude custom skill uploads, upload the same zip file or create a fresh archive from `skills/seqwalk` so `SKILL.md` stays at the archive root.
+
 ## OpenAI Codex
 
 Codex discovers user skills from `~/.agents/skills`.

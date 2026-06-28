@@ -62,6 +62,15 @@ From a local clone or downloaded copy:
 cd seqwalk
 ```
 
+Release zip install:
+
+```bash
+curl -L -o seqwalk-skill-v0.1.5.zip \
+  https://github.com/reason211/seqwalk/releases/download/v0.1.5/seqwalk-skill-v0.1.5.zip
+mkdir -p ~/.agents/skills/seqwalk
+unzip -o seqwalk-skill-v0.1.5.zip -d ~/.agents/skills/seqwalk
+```
+
 Codex user install:
 
 ```bash
