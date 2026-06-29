@@ -900,10 +900,11 @@
       document.documentElement.style.setProperty("--rail-top", `${nextTop}px`);
     }
 
-    function updateSectionNav() {
-      if (!sectionButtons.size) return;
-      const markerY = (participantRail?.getBoundingClientRect().bottom || 210) + 16;
-      const section = sections
+    function sectionAtMarker(markerY) {
+      if (isNearPageBottom()) {
+        return sections[sections.length - 1] || null;
+      }
+      return sections
         .map((item) => {
           const rect = item.getBoundingClientRect();
           return { item, rect };
@@ -913,7 +914,13 @@
           const aPassed = a.rect.top <= markerY ? 0 : 1;
           const bPassed = b.rect.top <= markerY ? 0 : 1;
           return aPassed - bPassed || Math.abs(a.rect.top - markerY) - Math.abs(b.rect.top - markerY);
-        })[0]?.item;
+        })[0]?.item || null;
+    }
+
+    function updateSectionNav() {
+      if (!sectionButtons.size) return;
+      const markerY = (participantRail?.getBoundingClientRect().bottom || 210) + 16;
+      const section = sectionAtMarker(markerY);
       const activeId = section?.id || "all";
       sectionButtons.forEach((button, id) => {
         const active = id === activeId || (id === "all" && !section);
@@ -982,6 +989,11 @@
 
     function clamp(value, min, max) {
       return Math.min(max, Math.max(min, value));
+    }
+
+    function isNearPageBottom(tolerance = 2) {
+      const scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+      return window.scrollY >= scrollHeight - window.innerHeight - tolerance;
     }
 
     function actorCenterInStep(actorId, step) {
@@ -1212,7 +1224,17 @@
 
     function updateActiveFromViewport() {
       const targetY = 238;
-      const candidates = visibleSteps()
+      const visible = visibleSteps();
+      const activeSection = sectionAtMarker(targetY);
+      const activeSectionSteps = activeSection
+        ? visible.filter((step) => step.closest(".sequence-section") === activeSection)
+        : visible;
+      if (isNearPageBottom()) {
+        viewportStep = activeSectionSteps[activeSectionSteps.length - 1] || visible[visible.length - 1] || null;
+        renderHighlights();
+        return;
+      }
+      const candidates = activeSectionSteps
         .map((step) => {
           const rect = step.getBoundingClientRect();
           return {
@@ -1223,7 +1245,7 @@
         })
         .filter((item) => item.visible)
         .sort((a, b) => a.distance - b.distance);
-      viewportStep = candidates[0]?.step || visibleSteps()[0];
+      viewportStep = candidates[0]?.step || activeSectionSteps[0] || visible[0];
       renderHighlights();
     }
 
