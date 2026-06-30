@@ -12,7 +12,7 @@ If SeqWalk saves you review time, please consider [buying me a coffee](SUPPORT.m
 
 Static sequence diagrams get noisy when callbacks, retries, audits, notifications, and BI events all appear at once. SeqWalk keeps the same e-commerce order flow readable by revealing it step by step as you scroll, with card locks and component locks for focused review.
 
-- [Interactive HTML demo](https://raw.githack.com/reason211/seqwalk/main/examples/ecommerce-order-flow.html)
+- [Interactive HTML demo](https://raw.githack.com/reason211/seqwalk/99b97ec6d782d4d926bba77fa1b3683bcbb1bf78/examples/ecommerce-order-flow.html)
 
 Both previews use the same `1440x900` frame.
 
