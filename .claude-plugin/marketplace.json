@@ -12,7 +12,7 @@
         "source": "github",
         "repo": "reason211/seqwalk"
       },
-      "description": "Walk through AI-written code with interactive HTML sequence diagrams.",
+      "description": "Walk through AI-written code with interactive HTML sequence diagrams. Free and MIT licensed; support links and wallet QR codes are in the repository.",
       "version": "0.1.5",
       "category": "development",
       "homepage": "https://github.com/reason211/seqwalk",
